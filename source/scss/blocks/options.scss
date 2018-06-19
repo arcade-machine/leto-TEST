@@ -1,0 +1,61 @@
+.options {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.options__item {
+  width: 50%;
+}
+
+.options__image {
+  width: 115px;
+  height: 115px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: block;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-position: -1px -4px;
+  background-repeat: no-repeat;
+
+  &--zavodnaya {
+    background-image: url("../img/zavodnaya-image--mobile.png");
+  }
+
+  &--solnechnaya {
+    background-image: url("../img/solnechnaya-image--mobile.png");
+  }
+
+  &--golden-sand {
+    background-image: url("../img/golden-sand-image--mobile.png");
+  }
+
+  &--kurortnaya {
+    background-image: url("../img/kurortnaya-image--mobile.png");
+  }
+}
+
+.options__name {
+  padding: 0;
+  margin: 0;
+  font-family: "Segeo";
+  font-size: 16px;
+  color: #fffffe;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.optinos__dates {
+  padding: 0;
+  margin: 0;
+  font-family: "Segeo";
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  color: #184a6f;
+  text-transform: uppercase;
+  text-align: center;
+}
