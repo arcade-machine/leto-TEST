@@ -1,9 +1,50 @@
 .header {
   padding-top: 10px;
   margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .header__logo {
   display: block;
   margin: 0 auto;
+}
+
+.header__plane--right {
+  width: 96px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  background-image: url("../img/plane--mobile.png");
+  background-repeat: no-repeat;
+  animation-name: movingX;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  overflow: hidden;
+}
+
+.header__plane--left {
+  width: 96px;
+  height: 35px;
+  position: absolute;
+  left: -100px;
+  top: 15px;
+  background-image: url("../img/plane-left--mobile.png");
+  background-repeat: no-repeat;
+  animation-name: movingX-left;
+  animation-duration: 20s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet) {
+  .header {
+    padding-top: 20px;
+    margin-bottom: 45px;
+  }
 }

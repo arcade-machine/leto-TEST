@@ -8,6 +8,16 @@
 
 .options__item {
   width: 50%;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.options__item:hover .options__dates {
+  color: #ff1a14;
 }
 
 .options__image {
@@ -15,27 +25,73 @@
   height: 115px;
   margin: 0 auto;
   margin-bottom: 5px;
+  position: relative;
   display: block;
   border: 5px solid #ffffff;
   border-radius: 50%;
   box-sizing: border-box;
   background-position: -1px -4px;
   background-repeat: no-repeat;
+  box-shadow: -5px 7px 5px 0 rgba(0,0,0,.5);
 
   &--zavodnaya {
     background-image: url("../img/zavodnaya-image--mobile.png");
+
+    &::after {
+      content: '';
+      width: 68px;
+      height: 73px;
+      position: absolute;
+      bottom: -5px;
+      right: -22px;
+      background-image: url("../img/cog--mobile.png");
+      background-repeat: no-repeat;
+    }
   }
 
   &--solnechnaya {
     background-image: url("../img/solnechnaya-image--mobile.png");
+
+    &::after {
+      content: '';
+      width: 83px;
+      height: 83px;
+      position: absolute;
+      bottom: -15px;
+      right: -30px;
+      background-image: url("../img/sun--mobile.png");
+      background-repeat: no-repeat;
+    }
   }
 
   &--golden-sand {
     background-image: url("../img/golden-sand-image--mobile.png");
+
+    &::after {
+      content: '';
+      width: 67px;
+      height: 63px;
+      position: absolute;
+      bottom: -5px;
+      right: -22px;
+      background-image: url("../img/sandals--mobile.png");
+      background-repeat: no-repeat;
+    }
   }
 
   &--kurortnaya {
     background-image: url("../img/kurortnaya-image--mobile.png");
+
+    &::after {
+      content: '';
+      width: 62px;
+      height: 72px;
+      position: absolute;
+      bottom: -5px;
+      right: -22px;
+      background-image: url("../img/coconut--mobile.png");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -45,11 +101,12 @@
   font-family: "Segeo";
   font-size: 16px;
   color: #fffffe;
+  text-shadow: -1px 1px 1px rgba(0, 0, 0, 1);
   text-transform: uppercase;
   text-align: center;
 }
 
-.optinos__dates {
+.options__dates {
   padding: 0;
   margin: 0;
   font-family: "Segeo";
@@ -58,4 +115,10 @@
   color: #184a6f;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .options__item {
+    width: 25%;
+  }
 }

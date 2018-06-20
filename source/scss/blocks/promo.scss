@@ -39,8 +39,10 @@
 }
 
 .promo__advertisement {
+  width: 320px;
   padding-top: 65px;
   padding-bottom: 10px;
+  margin: 0 auto;
   position: relative;
 
   &::after {
@@ -62,18 +64,120 @@
   width: 187px;
   padding: 5px 20px;
   margin: 0 auto;
-  border: 5px solid #b37353;
-  border-radius: 2px;
+  border: 5px solid #94380b;
+  border-radius: 5px;
   box-sizing: border-box;
   display: block;
+  position: relative;
+  text-decoration: none;
+  background-color: #ffa358;
+  box-shadow:
+          inset -5px 5px 1px rgba(251, 193, 124, 0.8), /*верхняя-правая тень*/
+          inset 5px -5px 1px rgba(223, 128, 50, 0.8), /*нижняя-левая тень*/
+          -1px 1px 0px 0 rgba(0,0,0,.5);
+
+  &:hover {
+    &::before {
+      content: '';
+      width: 187px;
+      height: 52px;
+      border-radius: 5px;
+      background-color: #fff;
+      opacity: .35;
+      position: absolute;
+      top: -4px;
+      left: -5px;
+    }
+  }
+}
+
+.promo__button:hover + .crab {
+  animation-play-state: paused;
+
+  & .crab__left-foot {
+    animation-play-state: paused;
+  }
+
+  & .crab__right-foot {
+    animation-name: crab-right-foot;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  & .crab__right-hand {
+    animation-name: crab-right-hand;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+.promo__content {
+  padding: 0;
+  margin: 0;
   font-family: "Segeo";
   font-size: 33px;
   line-height: 33.5px;
   letter-spacing: 0.02em;
-  color: #ff1a14;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #ffa358;
-  z-index: 0;
+  background: linear-gradient(to bottom, rgba(235,6,0,1) 0%, rgba(189,5,0,1) 66%, rgba(189,5,0,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: $tablet) {
+  .promo__header {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    line-height: normal;
+
+    &--price {
+      font-size: 58px;
+    }
+  }
+
+  .promo__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .promo__price {
+    width: auto;
+    font-size: 79px;
+
+    &::after {
+      top: 45px;
+      right: 20px;
+      font-size: 51px;
+    }
+  }
+
+  .promo__advertisement {
+    width: auto;
+    max-width: 580px;
+    padding-top: 180px;
+    padding-bottom: 30px;
+    
+    &::after {
+      background-image: url("../IMG/tree.png");
+      background-size: 575px 204px;
+      background-position: 50% 100%;
+    }
+  }
+
+  .promo__button {
+    width: 405px;
+  }
+
+  .promo__content {
+    font-size: 73px;
+    line-height: 73px;
+  }
 }

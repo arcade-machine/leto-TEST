@@ -1,7 +1,20 @@
 .tours {
   padding: 0;
   margin: 0;
+  position: relative;
   border: 5px solid #ffffff;
+  box-shadow: -5px 7px 5px 0 rgba(0,0,0,.5);
+
+  &::after {
+    content: '';
+    width: 5px;
+    height: 96%;
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    box-shadow: -5px 7px 5px 0 rgba(0,0,0,.5);
+    z-index: -1;
+  }
 }
 
 .tours__header {
@@ -9,7 +22,43 @@
   margin: 0 auto;
   font-family: "Segeo";
   font-size: 28px;
+  line-height: 26px;
   letter-spacing: 0.02em;
+  position: relative;
   color: #fffffe;
+  text-shadow: -4px 2px 1px rgba(0, 0, 0, 0.41);
   text-transform: uppercase;
+  background-color: transparent;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    width: 58px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    left: -55px;
+    box-shadow: -4px 7px 3px 0 rgba(0,0,0,.5);
+  }
+
+  &::after {
+    content: '';
+    width: 65px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    right: -64px;
+    box-shadow: -4px 7px 3px 0 rgba(0,0,0,.5);
+  }
+}
+
+@media (min-width: $tablet) {
+  .tours {
+    padding-top: 40px;
+    border: 10px solid #ffffff;
+  }
+
+  .tours__header {
+    font-size: 60px;
+  }
 }

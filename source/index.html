@@ -9,20 +9,37 @@
 <body>
 <div class="main-container">
     <header class="header">
-        <img class="header__logo" src="IMG/logo-header--mobile.png" alt="Маркетинговое агентство 'Лето'">
+        <div class="header__plane--right"></div>
+        <div class="header__plane--left"></div>
+        <picture>
+            <source media="(min-width: 768px)" srcset="IMG/logo-header.png">
+            <img class="header__logo" src="IMG/logo-header--mobile.png" alt="Маркетинговое агентство 'Лето'">
+        </picture>
     </header>
     <section class="promo">
         <div class="promo__hot-offer">
             <h2 class="promo__header">Успей приобрести!</h2>
             <div class="promo__wrapper">
                 <p class="promo__header promo__header--price">путевки</p>
-                <p class="promo__header promo__header--price">от <span class="promo__price">70 000 Р</span></p>
+                <p class="promo__header promo__header--price">&nbsp;от <span class="promo__price">70 000 Р</span></p>
             </div>
         </div>
         <div class="promo__advertisement">
+            <a class="promo__button" href="#">
+                <p class="promo__content">В лето</p>
+            </a>
             <div class="promo__crab crab">
+                <div class="crab__body"></div>
+                <div class="crab__eye crab__eye--left"></div>
+                <div class="crab__eye crab__eye--right"></div>
+                <div class="crab__left-eye"></div>
+                <div class="crab__right-eye"></div>
+                <div class="crab__left-foot"></div>
+                <div class="crab__right-foot"></div>
+                <div class="crab__left-hand"></div>
+                <div class="crab__right-hand"></div>
+                <div class="crab__shell"></div>
             </div>
-            <a class="promo__button" href="#">В лето</a>
         </div>
     </section>
     <section class="main-page">
@@ -32,30 +49,30 @@
                 <li class="options__item">
                     <div class="options__image options__image--zavodnaya"></div>
                     <h3 class="options__name">Заводная</h3>
-                    <p class="optinos__dates">01.06.2016 - 15.06.2016</p>
+                    <p class="options__dates">01.06.2016 - 15.06.2016</p>
                 </li>
                 <li class="options__item">
                     <div class="options__image options__image--solnechnaya"></div>
                     <h3 class="options__name">Солнечная</h3>
-                    <p class="optinos__dates">16.06.2016 - 30.06.2016</p>
+                    <p class="options__dates">16.06.2016 - 30.06.2016</p>
                 </li>
                 <li class="options__item">
                     <div class="options__image options__image--golden-sand"></div>
                     <h3 class="options__name">Золотой песок</h3>
-                    <p class="optinos__dates">01.07.2016 - 17.07.2016</p>
+                    <p class="options__dates">01.07.2016 - 17.07.2016</p>
                 </li>
                 <li class="options__item">
                     <div class="options__image options__image--kurortnaya"></div>
                     <h3 class="options__name">Курортная</h3>
-                    <p class="optinos__dates">18.07.2016 - 31.07.2016</p>
+                    <p class="options__dates">18.07.2016 - 31.07.2016</p>
                 </li>
             </ul>
         </fieldset>
     </section>
     <footer class="main-footer">
-        <p class="main-footer__content">Торопитесь, пока всё не разобрали!</p>
+        <div class="main-footer__turtle"></div>
+        <p class="main-footer__content">Торопитесь,</p><p class="main-footer__content">пока всё не разобрали!</p>
     </footer>
 </div>
-
 </body>
 </html>

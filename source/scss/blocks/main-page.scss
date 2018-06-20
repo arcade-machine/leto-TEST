@@ -1,3 +1,16 @@
 .main-page {
+  width: 320px;
   padding: 0 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet) {
+  .main-page {
+    width: auto;
+    max-width: 1200px;
+    padding: 0 30px;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
 }

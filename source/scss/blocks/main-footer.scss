@@ -1,0 +1,33 @@
+.main-footer {
+  width: 320px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-footer__content {
+  padding: 0;
+  margin: 0;
+  font-family: "Segeo";
+  font-size: 21px;
+  letter-spacing: 0.02em;
+  color: #184a6f;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-footer__turtle {
+  width: 66px;
+  height: 37px;
+  position: absolute;
+  top: 20px;
+  left: 128px;
+  background-image: url("../img/turtle--mobile.png");
+  background-repeat: no-repeat;
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
