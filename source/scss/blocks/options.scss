@@ -20,6 +20,10 @@
   color: #ff1a14;
 }
 
+.options__item:hover .options__names {
+  transform: scale(1.05);
+}
+
 .options__image {
   width: 115px;
   height: 115px;
@@ -32,7 +36,8 @@
   box-sizing: border-box;
   background-position: -1px -4px;
   background-repeat: no-repeat;
-  box-shadow: -5px 7px 5px 0 rgba(0,0,0,.5);
+  box-shadow: -5px 7px 5px 0 rgba(0,0,0,.5),
+              inset -5px 7px 5px 0 rgba(0,0,0,.5);
 
   &--zavodnaya {
     background-image: url("../img/zavodnaya-image--mobile.png");
@@ -104,6 +109,7 @@
   text-shadow: -1px 1px 1px rgba(0, 0, 0, 1);
   text-transform: uppercase;
   text-align: center;
+  transition: all .4s ease-in-out;
 }
 
 .options__dates {
@@ -120,5 +126,75 @@
 @media (min-width: $tablet) {
   .options__item {
     width: 25%;
+  }
+
+  .options {
+    overflow: visible;
+  }
+
+  .options__image {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    border: 10px solid #ffffff;
+
+    &--zavodnaya {
+      background-image: url("../img/zavodnaya-image.png");
+
+      &::after {
+        width: 155px;
+        height: 165px;
+        bottom: -20px;
+        right: -45px;
+        background-image: url("../img/cog.png");
+      }
+    }
+
+    &--solnechnaya {
+      background-image: url("../img/solnechnaya-image.png");
+
+      &::after {
+        width: 185px;
+        height: 185px;
+        bottom: -30px;
+        right: -55px;
+        background-image: url("../img/sun.png");
+      }
+    }
+
+    &--golden-sand {
+      background-image: url("../img/golden-sand-image.png");
+
+      &::after {
+        width: 142px;
+        height: 137px;
+        bottom: -10px;
+        right: -45px;
+        background-image: url("../img/sandals.png");
+      }
+    }
+
+    &--kurortnaya {
+      background-image: url("../img/kurortnaya-image.png");
+
+      &::after {
+        width: 140px;
+        height: 160px;
+        bottom: -15px;
+        right: -55px;
+        background-image: url("../img/coconut.png");
+      }
+    }
+  }
+
+  .options__name {
+    width: 108%;
+    font-size: 35px;
+    text-shadow: -3px 2px 5px #000;
+  }
+
+  .options__dates {
+    font-size: 28px;
+    letter-spacing: -2px;
   }
 }

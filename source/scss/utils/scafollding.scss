@@ -68,7 +68,7 @@ $tablet: 768px;
 }
 
 @keyframes mirror {
-  0% {
+  100% {
     transform: scale(-1, 1);
   }
 }
@@ -128,13 +128,13 @@ $tablet: 768px;
 }
 
 @keyframes crab-right-foot {
-  5% {
+  1% {
     bottom: -6px;
   }
-  10% {
-    bottom: 0px;
+  5% {
+    bottom: 0;
   }
-  15% {
+  10% {
     bottom: -6px;
   }
   100% {
@@ -150,11 +150,72 @@ $tablet: 768px;
 }
 
 @media (min-width: $tablet) {
+  body {
+    overflow-x: hidden;
+  }
+
   .main-container {
-    max-width: none;
+    max-width: 1920px;
+    min-width: 1366px;
 
     &::before {
       background-image: url("../img/bg.jpg");
+      overflow: hidden;
+    }
+  }
+
+  @keyframes movingX {
+    0% {
+      transform: translateX(-0.1vw);
+    }
+    100% {
+      transform: translateX(300vw);
+    }
+  }
+
+  @keyframes movingX-left {
+    0% {
+      transform: translateX(200vw);
+    }
+    100% {
+      transform: translateX(-100vw);
+    }
+  }
+
+  @keyframes crab-movement {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(105px);
+    }
+    75% {
+      transform: translateX(-155px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes crab-right-foot {
+    1% {
+      bottom: -10px;
+    }
+    5% {
+      bottom: 0;
+    }
+    10% {
+      bottom: -10px;
+    }
+    100% {
+      bottom: -10px;
+    }
+  }
+
+
+  @keyframes crab-right-hand {
+    30% {
+      transform: translate(-10px, 10px) rotate(-20deg);
     }
   }
 }

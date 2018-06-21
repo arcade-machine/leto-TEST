@@ -21,7 +21,7 @@
   animation-name: movingX;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
+  animation-timing-function: linear;
   overflow: hidden;
 }
 
@@ -46,5 +46,20 @@
   .header {
     padding-top: 20px;
     margin-bottom: 45px;
+  }
+
+  .header__plane--right {
+    width: 232px;
+    height: 85px;
+    background-image: url("../img/plane.png");
+    animation-duration: 25s;
+  }
+
+  .header__plane--left {
+    width: 232px;
+    height: 85px;
+    left: -300px;
+    background-image: url("../img/plane-left.png");
+    animation-delay: 15s;
   }
 }

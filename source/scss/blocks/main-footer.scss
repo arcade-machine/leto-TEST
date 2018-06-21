@@ -31,3 +31,26 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
+
+@media (min-width: $tablet) {
+  .main-footer {
+    width: auto;
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-footer__content {
+    font-size: 58px;
+  }
+
+  .main-footer__turtle {
+    width: 151px;
+    height: 85px;
+    top: 0;
+    left: 46%;
+    background-image: url("../img/turtle.png");
+  }
+}
