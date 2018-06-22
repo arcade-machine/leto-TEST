@@ -6,6 +6,11 @@
   src: url("../fonts/seguibl.woff") format("woff");
 }
 
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -45,25 +50,16 @@ $tablet: 768px;
 
 @keyframes movingX {
   0% {
-    transform: translateX(-200px);
+    transform: translateX(-21.96vw);
   }
-  70% {
-    transform: translateX(600px);
+  49% {
+    transform: translateX(125vw);
   }
-  100% {
-    transform: translateX(800px);
+  50% {
+    transform: translateX(125vw) scale(-1, 1);
   }
-}
-
-@keyframes movingX-left {
-  0% {
-    transform: translateX(800px);
-  }
-  70% {
-    transform: translateX(-195px);
-  }
-  100% {
-    transform: translateX(-200px);
+  99% {
+    transform: translateX(-21.96vw) scale(-1, 1);
   }
 }
 
@@ -150,13 +146,9 @@ $tablet: 768px;
 }
 
 @media (min-width: $tablet) {
-  body {
-    overflow-x: hidden;
-  }
-
   .main-container {
     max-width: 1920px;
-    min-width: 1366px;
+    min-width: 0;
 
     &::before {
       background-image: url("../img/bg.jpg");
@@ -166,56 +158,53 @@ $tablet: 768px;
 
   @keyframes movingX {
     0% {
-      transform: translateX(-0.1vw);
+      transform: translateX(-21.96vw);
     }
-    100% {
-      transform: translateX(300vw);
+    49% {
+      transform: translateX(125vw);
     }
-  }
-
-  @keyframes movingX-left {
-    0% {
-      transform: translateX(200vw);
+    50% {
+      transform: translateX(125vw) scale(-1, 1);
     }
-    100% {
-      transform: translateX(-100vw);
+    99% {
+      transform: translateX(-21.96vw) scale(-1, 1);
     }
   }
 
   @keyframes crab-movement {
     0% {
-      transform: translateX(0px);
+      transform: translateX(0);
     }
     25% {
-      transform: translateX(105px);
+      transform: translateX(7.68vw);
     }
     75% {
-      transform: translateX(-155px);
+      transform: translateX(-11.3vw);
     }
     100% {
-      transform: translateX(0px);
+      transform: translateX(0);
     }
   }
 
   @keyframes crab-right-foot {
     1% {
-      bottom: -10px;
+      bottom: -0.73vw;
     }
     5% {
       bottom: 0;
     }
     10% {
-      bottom: -10px;
+      bottom: -0.73vw;
     }
     100% {
-      bottom: -10px;
+      bottom: -0.73vw;
     }
   }
 
 
   @keyframes crab-right-hand {
     30% {
-      transform: translate(-10px, 10px) rotate(-20deg);
+      transform: translate(-0.73vw, 0.73vw) rotate(-20deg);
     }
   }
 }

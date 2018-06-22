@@ -22,7 +22,31 @@
   }
 }
 
+.promo__vacation {
+  padding: 0;
+  margin: 0;
+  font-family: "Segeo";
+  font-size: 26px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #184a6f;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .promo__price {
+  margin: 0 auto;
+  display: block;
+  font-family: "Segeo";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #184a6f;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__numbers {
   position: relative;
   font-size: 36px;
   line-height: 32px;
@@ -133,16 +157,16 @@
 }
 
 @media (min-width: $tablet) {
+  .promo {
+    margin-bottom: 0.73vw;
+  }
+
   .promo__header {
     width: auto;
     padding: 0;
     margin: 0;
-    font-size: 50px;
+    font-size: 3.66vw;
     line-height: normal;
-
-    &--price {
-      font-size: 58px;
-    }
   }
 
   .promo__wrapper {
@@ -151,41 +175,55 @@
   }
 
   .promo__price {
+    margin: 0;
+    font-size: 4.25vw;
+    line-height: normal;
+  }
+
+  .promo__vacation {
     width: auto;
-    font-size: 79px;
+    font-size: 4.25vw;
+    line-height: normal;
+  }
+
+  .promo__numbers {
+    width: auto;
+    font-size: 5.78vw;
 
     &::after {
-      top: 45px;
-      right: 20px;
-      font-size: 51px;
+      top: 3.3vw;
+      right: 6%;
+      font-size: 3.73vw;
     }
   }
 
   .promo__advertisement {
     width: auto;
-    max-width: 580px;
-    padding-top: 180px;
-    padding-bottom: 30px;
+    max-width: 42.5%;
+    padding-top: 13.2%;
+    padding-bottom: 2.2%;
     
     &::after {
       background-image: url("../IMG/tree.png");
-      background-size: 575px 204px;
+      background-size: 100%;
       background-position: 50% 100%;
     }
   }
 
   .promo__button {
-    width: 404px;
-    padding: 9px 20px;
+    width: 69.5%;
+    height: 8vw;
+    padding: 1.55% 3.45%;
     border: 10px solid #94380b;
     border-radius: 20px;
     background-image: url("../img/button-background.png");
+    background-size: 100%;
   }
 
   .promo__button:hover {
     &::before {
       content: '';
-      width: 384px;
+      width: 100%;
       height: 90px;
       border-radius: 5px;
       background-color: #fff;
@@ -198,7 +236,8 @@
   }
 
   .promo__content {
-    font-size: 73px;
-    line-height: 73px;
+    padding-top: 4%;
+    box-sizing: border-box;
+    font-size: 5.34vw;
   }
 }

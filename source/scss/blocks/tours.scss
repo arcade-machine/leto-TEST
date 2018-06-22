@@ -11,7 +11,7 @@
     width: 60px;
     height: 5px;
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: 0;
     box-shadow: -4px 7px 3px 0 rgba(0,0,0,.5);
     z-index: -1;
@@ -22,7 +22,7 @@
     width: 60px;
     height: 5px;
     position: absolute;
-    top: 4px;
+    top: 3px;
     right: -1px;
     box-shadow: -4px 7px 3px 0 rgba(0,0,0,.5);
     z-index: -1;
@@ -44,17 +44,29 @@
   z-index: 0;
 }
 
+@-moz-document url-prefix() {
+  .tours {
+    &::before {
+      margin-top: -22px;
+    }
+
+    &::after {
+      margin-top: -22px;
+    }
+  }
+}
+
 @media (min-width: $tablet) {
   .tours {
-    max-height: 200px;
-    padding-top: 40px;
-    margin-bottom: 195px;
-    border: 10px solid #ffffff;
-    box-shadow: -10px 10px 5px 0 rgba(0,0,0,.5),
-    inset -10px 0px 3px -4px rgba(0,0,0,.5);
+    max-height: 14.65vw;
+    padding-top: 2.93vw;
+    margin-bottom: 14.28vw;
+    border: 0.73vw solid #ffffff;
+    box-shadow: -0.73vw 0.73vw 0.36vw 0 rgba(0,0,0,.5),
+    inset -0.73vw 0px 0.21vw -0.29vw rgba(0,0,0,.5);
 
     &::before {
-      width: 420px;
+      width: 36%;
       height: 10px;
       top: -2px;
       left: 0;
@@ -62,7 +74,7 @@
     }
 
     &::after {
-      width: 418px;
+      width: 35%;
       height: 10px;
       top: -2px;
       right: -3px;
@@ -71,8 +83,8 @@
   }
 
   .tours__header {
-    margin-left: 36%;
-    font-size: 60px;
+    margin-left: 32vw;
+    font-size: 4.39vw;
     text-shadow: -6px 4px 1px rgba(0,0,0,.41);
 
     &:after {
@@ -89,6 +101,18 @@
       left: -417px;
       top: 4px;
       box-shadow: -4px 15px 3px 0 rgba(0,0,0,.5);
+    }
+  }
+
+  @-moz-document url-prefix() {
+    .tours {
+      &::before {
+        margin-top: -17px;
+      }
+
+      &::after {
+        margin-top: -17px;
+      }
     }
   }
 }

@@ -109,7 +109,6 @@
   text-shadow: -1px 1px 1px rgba(0, 0, 0, 1);
   text-transform: uppercase;
   text-align: center;
-  transition: all .4s ease-in-out;
 }
 
 .options__dates {
@@ -124,77 +123,87 @@
 }
 
 @media (min-width: $tablet) {
-  .options__item {
-    width: 25%;
+  .options {
+    justify-content: space-between;
+    overflow: visible;
   }
 
-  .options {
-    overflow: visible;
+  .options__item {
+    width: 18.3vw;
   }
 
   .options__image {
     width: 100%;
     max-width: 250px;
-    height: 250px;
-    border: 10px solid #ffffff;
+    height: 16.8vw;
+    border: 0.733vw solid #ffffff;
 
     &--zavodnaya {
       background-image: url("../img/zavodnaya-image.png");
+      background-size: 100%;
 
       &::after {
-        width: 155px;
-        height: 165px;
-        bottom: -20px;
-        right: -45px;
+        width: 11.27vw;
+        height: 12.08vw;
+        bottom: -1.46vw;
+        right: -3.29vw;
         background-image: url("../img/cog.png");
+        background-size: 100%;
       }
     }
 
     &--solnechnaya {
       background-image: url("../img/solnechnaya-image.png");
+      background-size: 100%;
 
       &::after {
-        width: 185px;
-        height: 185px;
-        bottom: -30px;
-        right: -55px;
+        width: 13.55vw;
+        height: 13.55vw;
+        bottom: -2.19vw;
+        right: -4.02vw;
         background-image: url("../img/sun.png");
+        background-size: 100%;
       }
     }
 
     &--golden-sand {
       background-image: url("../img/golden-sand-image.png");
+      background-size: 100%;
 
       &::after {
-        width: 142px;
-        height: 137px;
-        bottom: -10px;
-        right: -45px;
+        width: 10.4vw;
+        height: 10.03vw;
+        bottom: -0.73vw;
+        right: -3.29vw;
         background-image: url("../img/sandals.png");
+        background-size: 100%;
       }
     }
 
     &--kurortnaya {
       background-image: url("../img/kurortnaya-image.png");
+      background-size: 100%;
 
       &::after {
-        width: 140px;
-        height: 160px;
-        bottom: -15px;
-        right: -55px;
+        width: 10.25vw;
+        height: 11.72vw;
+        bottom: -1.09vw;
+        right: -4.02vw;
         background-image: url("../img/coconut.png");
+        background-size: 100%;
       }
     }
   }
 
   .options__name {
-    width: 108%;
-    font-size: 35px;
-    text-shadow: -3px 2px 5px #000;
+    width: 124%;
+    margin-right: -2.19vw;
+    font-size: 2.56vw;
+    text-shadow: -0.21vw 0.14vw 0.36vw #000;
   }
 
   .options__dates {
-    font-size: 28px;
+    font-size: 1.2em;
     letter-spacing: -2px;
   }
 }
