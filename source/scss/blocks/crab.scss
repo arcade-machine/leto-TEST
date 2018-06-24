@@ -159,56 +159,74 @@
 @media (min-width: $tablet) {
   .crab {
     width: 11.2vw;
+    max-width: 153px;
     height: 10.77vw;
-    left: 18.30vw;
+    max-height: 147px;
+    left: 39%;
     top: 3.22vw;
   }
 
   .crab__body {
     width: 5.78vw;
+    max-width: 79px;
     height: 3.29vw;
-    left: 2.56vw;
+    max-height: 45px;
+    left: 24%;
   }
 
   .crab__left-foot {
     width: 3.66vw;
+    max-width: 50px;
     height: 4.75vw;
+    max-height: 65px;
   }
 
   .crab__right-foot {
     width: 3.66vw;
+    max-width: 50px;
     height: 4.75vw;
+    max-height: 65px;
   }
 
   .crab__left-hand {
     width: 4.02vw;
+    max-width: 59px;
     height: 3.14vw;
-    left: 1.09vw;
+    max-height: 43px;
+    left: 10%;
   }
 
   .crab__right-hand {
     width: 4.02vw;
+    max-width: 59px;
     height: 3.14vw;
-    right: 1.09vw;
+    max-height: 43px;
+    right: 10%;
   }
 
   .crab__left-eye {
     width: 1.46vw;
+    max-width: 20px;
     height: 1.24vw;
-    bottom: 1.61vw;
-    left: 3.87vw;
+    max-height: 17px;
+    bottom: 14%;
+    left: 35%;
    }
 
   .crab__right-eye {
     width: 1.46vw;
+    max-width: 20px;
     height: 1.24vw;
-    bottom: 1.61vw;
-    right: 3.87vw;
+    max-height: 17px;
+    bottom: 14%;
+    right: 35%;
   }
 
   .crab__eye {
     width: 0.87vw;
+    max-width: 12px;
     height: 0.58vw;
+    max-height: 8px;
     bottom: 2.34vw;
 
     &--left {
@@ -221,8 +239,51 @@
   }
   .crab__shell {
     width: 7.17vw;
+    max-width: 98px;
     height: 8.49vw;
+    max-height: 116px;
     left: 1.83vw;
   }
+}
 
+@media (min-width: $desktop) {
+  .crab {
+    top: 40px
+  }
+
+  .crab__body {
+    left: 35px;
+  }
+
+  .crab__left-hand {
+    left: 15px;
+  }
+
+  .crab__right-hand {
+    right: 15px;
+  }
+
+  .crab__left-eye {
+    bottom: 22px;
+    left: 53px;
+  }
+
+  .crab__right-eye {
+    bottom: 22px;
+    right: 53px;
+  }
+
+  .crab__eye--left {
+    bottom: 33px;
+    left: 53px;
+  }
+
+  .crab__eye--right {
+    bottom: 33px;
+    right: 53px;
+  }
+
+  .crab__shell {
+    left: 25px;
+  }
 }

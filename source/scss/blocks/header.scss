@@ -34,20 +34,26 @@
 
 @media (min-width: $tablet) {
   .header {
-    padding-top: 1.47vw;
-    margin-bottom: 3.3vw;
+    height: 8.49vw;
+    max-height: 116px;
+    padding-top: 1.47%;
+    margin-bottom: 3.3%;
   }
 
   .header__logo {
     width: 21.6vw;
-    height: 8.5vw;
+    max-width: 295px;
+    height: 100%;
+    max-height: 116px;
     background-image: url("../img/logo-header.png");
     background-size: 100%;
   }
 
   .header__plane {
     width: 17vw;
+    max-width: 232px;
     height: 6.23vw;
+    max-height: 85px;
     left: -21.96vw;
     background-image: url("../img/plane.png");
     animation-duration: 20s;

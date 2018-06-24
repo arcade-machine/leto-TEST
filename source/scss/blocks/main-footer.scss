@@ -34,8 +34,9 @@
 
 @media (min-width: $tablet) {
   .main-footer {
+    width: 100%;
+    max-width: 1366px;
     padding-top: 5.86vw;
-    width: auto;
   }
 
   .main-footer__wrapper {
@@ -44,15 +45,23 @@
   }
 
   .main-footer__content {
-    font-size: 4.25vw;
+    @include fluid-type(font-size, 768px, 1366px, 29px, 58px);
   }
 
   .main-footer__turtle {
     width: 11.15vw;
+    max-width: 151px;
     height: 6.23vw;
+    max-height: 85px;
     top: 0;
     left: 46%;
     background-image: url("../img/turtle.png");
     background-size: 100%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-footer {
+    padding-top: 80px;
   }
 }

@@ -129,13 +129,16 @@
   }
 
   .options__item {
-    width: 18.3vw;
+    width: 21.18%;
+    max-width: 250px;
+    max-height: 305px;
   }
 
   .options__image {
     width: 100%;
     max-width: 250px;
     height: 16.8vw;
+    max-height: 235px;
     border: 0.733vw solid #ffffff;
 
     &--zavodnaya {
@@ -144,7 +147,9 @@
 
       &::after {
         width: 11.27vw;
+        max-width: 155px;
         height: 12.08vw;
+        max-height: 165px;
         bottom: -1.46vw;
         right: -3.29vw;
         background-image: url("../img/cog.png");
@@ -158,7 +163,9 @@
 
       &::after {
         width: 13.55vw;
+        max-width: 185px;
         height: 13.55vw;
+        max-height: 185px;
         bottom: -2.19vw;
         right: -4.02vw;
         background-image: url("../img/sun.png");
@@ -172,7 +179,9 @@
 
       &::after {
         width: 10.4vw;
+        max-width: 142px;
         height: 10.03vw;
+        max-height: 137px;
         bottom: -0.73vw;
         right: -3.29vw;
         background-image: url("../img/sandals.png");
@@ -186,7 +195,9 @@
 
       &::after {
         width: 10.25vw;
+        max-width: 140px;
         height: 11.72vw;
+        max-height: 160px;
         bottom: -1.09vw;
         right: -4.02vw;
         background-image: url("../img/coconut.png");
@@ -197,13 +208,50 @@
 
   .options__name {
     width: 124%;
-    margin-right: -2.19vw;
-    font-size: 2.56vw;
+    margin-left: -2.19vw;
+    @include fluid-type(font-size, 768px, 1366px, 17px, 35px);
     text-shadow: -0.21vw 0.14vw 0.36vw #000;
   }
 
   .options__dates {
-    font-size: 1.2em;
+    margin-left: -0.5vw;
+    width: 112%;
+    @include fluid-type(font-size, 768px, 1366px, 14px, 28px);
     letter-spacing: -2px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .options__image {
+    border: 10px solid #ffffff;
+
+    &--zavodnaya::after {
+      bottom: -20px;
+      right: -45px;
+    }
+
+    &--solnechnaya::after {
+      bottom: -30px;
+      right: -55px;
+    }
+
+    &--golden-sand::after {
+      bottom: -10px;
+      right: -45px;
+    }
+
+    &--kurortnaya::after {
+      bottom: -15px;
+      right: -55px;
+    }
+  }
+
+  .options__name {
+    margin-left: -25px;
+    text-shadow: -3px 2px 5px #000;
+  }
+
+  .options__dates {
+    margin-left: -16px;
   }
 }

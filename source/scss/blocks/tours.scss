@@ -58,7 +58,8 @@
 
 @media (min-width: $tablet) {
   .tours {
-    max-height: 14.65vw;
+    height: 14.65vw;
+    max-height: 200px;
     padding-top: 2.93vw;
     margin-bottom: 14.28vw;
     border: 0.73vw solid #ffffff;
@@ -83,25 +84,9 @@
   }
 
   .tours__header {
-    margin-left: 32vw;
-    font-size: 4.39vw;
-    text-shadow: -6px 4px 1px rgba(0,0,0,.41);
-
-    &:after {
-      width: 415px;
-      height: 10px;
-      right: -425px;
-      top: 4px;
-      box-shadow: -4px 15px 3px 0 rgba(0,0,0,.5);
-    }
-
-    &:before {
-      width: 415px;
-      height: 10px;
-      left: -417px;
-      top: 4px;
-      box-shadow: -4px 15px 3px 0 rgba(0,0,0,.5);
-    }
+    margin-left: 36%;
+    @include fluid-type(font-size, 768px, 1366px, 33px, 60px);
+    text-shadow: -0.43vw 0.29vw 0.07vw rgba(0,0,0,.41);
   }
 
   @-moz-document url-prefix() {
@@ -114,5 +99,35 @@
         margin-top: -17px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .tours {
+    padding-top: 40px;
+    margin-bottom: 195px;
+    border: 10px solid #ffffff;
+    box-shadow: -10px 10px 5px 0 rgba(0,0,0,.5),
+    inset -10px 0px 3px -4px rgba(0,0,0,.5);
+
+    &::before {
+      width: 420px;
+      height: 10px;
+      top: -2px;
+      left: 0;
+      box-shadow: -4px 7px 3px 0 rgba(0,0,0,.5);
+    }
+
+    &::after {
+      width: 418px;
+      height: 10px;
+      top: -2px;
+      right: -3px;
+      box-shadow: -8px 7px 3px 0 rgba(0,0,0,.5);
+    }
+  }
+
+  .tours__header {
+    text-shadow: -6px 4px 1px rgba(0,0,0,.41);
   }
 }

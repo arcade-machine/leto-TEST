@@ -1,9 +1,11 @@
-@import "utils/scafollding.scss";
+@import "utils/scafollding.scss",
+"utils/fluid-type.scss",
+"utils/animations.scss";
 
 @import "blocks/header.scss",
-'blocks/promo.scss',
-'blocks/main-page.scss',
-'blocks/tours.scss',
-'blocks/options.scss',
-'blocks/main-footer.scss',
-'blocks/crab.scss';
+"blocks/promo.scss",
+"blocks/main-page.scss",
+"blocks/tours.scss",
+"blocks/options.scss",
+"blocks/main-footer.scss",
+"blocks/crab.scss";
