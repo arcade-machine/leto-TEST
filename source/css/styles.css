@@ -674,7 +674,7 @@ body {
       width: 35%;
       height: 10px;
       top: -2px;
-      right: -3px;
+      right: -5px;
       box-shadow: -8px 7px 3px 0 rgba(0, 0, 0, 0.5); }
   .tours__header {
     margin-left: 36%;
@@ -878,8 +878,8 @@ body {
         background-image: url("../img/coconut.png");
         background-size: 100%; }
   .options__name {
-    width: 124%;
-    margin-left: -2.19vw;
+    width: 127%;
+    margin-left: -2.29vw;
     font-size: 17px;
     text-shadow: -0.21vw 0.14vw 0.36vw #000; } }
   @media (min-width: 768px) and (min-width: 768px) {
@@ -918,7 +918,7 @@ body {
       bottom: -15px;
       right: -55px; }
   .options__name {
-    margin-left: -25px;
+    margin-left: -30px;
     text-shadow: -3px 2px 5px #000; }
   .options__dates {
     margin-left: -16px; } }
